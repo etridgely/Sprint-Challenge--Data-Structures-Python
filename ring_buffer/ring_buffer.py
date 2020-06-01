@@ -15,6 +15,8 @@ class RingBuffer:
         else:
             self.storage.append(item)
 
+        #missing one case
+
     def get(self):
         if len(self.storage) != self.capacity:
             new_storage = [i for i in self.storage if i is not None]
